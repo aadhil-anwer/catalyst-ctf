@@ -6,7 +6,9 @@
 <title>Display Hello</title>
 </head>
 <body>
-  <div id="display"></div>
+  <div id="timer"></div> <!-- Timer display -->
+
+  <div id="display"></div> <!-- Letter display -->
 
   <script>
     const word = "Hello";
@@ -23,7 +25,28 @@
       }
     }
 
-    displayNextLetter();
+    function updateTimer() {
+      const timerDiv = document.getElementById('timer');
+      let seconds = 0;
+
+      setInterval(() => {
+        seconds++;
+        timerDiv.textContent = formatTime(seconds);
+      }, 1000);
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const remainingSeconds = seconds % 60;
+      return `${pad(minutes)}:${pad(remainingSeconds)}`;
+    }
+
+    function pad(value) {
+      return value < 10 ? `0${value}` : value;
+    }
+
+    updateTimer(); // Start the timer
+    displayNextLetter(); // Start displaying the letters
   </script>
 </body>
 </html>
