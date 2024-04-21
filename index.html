@@ -1,52 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Display Hello</title>
-</head>
-<body>
-  <div id="timer"></div> <!-- Timer display -->
-
-  <div id="display"></div> <!-- Letter display -->
-
+<script language="javascript">document.write(unescape('%0A%3C%21%44%4F%43%54%59%50%45%20%68%74%6D%6C%3E%0A%3C%68%74%6D%6C%20%6C%61%6E%67%3D%22%65%6E%22%3E%0A%3C%68%65%61%64%3E%0A%3C%6D%65%74%61%20%63%68%61%72%73%65%74%3D%22%55%54%46%2D%38%22%3E%0A%3C%6D%65%74%61%20%6E%61%6D%65%3D%22%76%69%65%77%70%6F%72%74%22%20%63%6F%6E%74%65%6E%74%3D%22%77%69%64%74%68%3D%64%65%76%69%63%65%2D%77%69%64%74%68%2C%20%69%6E%69%74%69%61%6C%2D%73%63%61%6C%65%3D%31%2E%30%22%3E%0A%3C%74%69%74%6C%65%3E%43%54%46%20%4B%32%32%43%53%3C%2F%74%69%74%6C%65%3E%0A%3C%73%74%79%6C%65%3E%0A%20%20%62%6F%64%79%20%7B%0A%20%20%20%20%66%6F%6E%74%2D%66%61%6D%69%6C%79%3A%20%27%53%65%67%6F%65%20%55%49%27%2C%20%54%61%68%6F%6D%61%2C%20%47%65%6E%65%76%61%2C%20%56%65%72%64%61%6E%61%2C%20%73%61%6E%73%2D%73%65%72%69%66%3B%0A%20%20%20%20%6D%61%72%67%69%6E%3A%20%30%3B%0A%20%20%20%20%70%61%64%64%69%6E%67%3A%20%30%3B%0A%20%20%20%20%64%69%73%70%6C%61%79%3A%20%66%6C%65%78%3B%0A%20%20%20%20%6A%75%73%74%69%66%79%2D%63%6F%6E%74%65%6E%74%3A%20%63%65%6E%74%65%72%3B%0A%20%20%20%20%61%6C%69%67%6E%2D%69%74%65%6D%73%3A%20%63%65%6E%74%65%72%3B%0A%20%20%20%20%68%65%69%67%68%74%3A%20%31%30%30%76%68%3B%0A%20%20%20%20%62%61%63%6B%67%72%6F%75%6E%64%2D%63%6F%6C%6F%72%3A%20%23%66%39%66%39%66%39%3B%0A%20%20%7D%0A%0A%20%20%2E%63%6F%6E%74%61%69%6E%65%72%20%7B%0A%20%20%20%20%74%65%78%74%2D%61%6C%69%67%6E%3A%20%63%65%6E%74%65%72%3B%0A%20%20%7D%0A%0A%20%20%23%78%64%30%37%38%34%20%7B%0A%20%20%20%20%66%6F%6E%74%2D%73%69%7A%65%3A%20%33%32%70%78%3B%0A%20%20%20%20%6D%61%72%67%69%6E%2D%62%6F%74%74%6F%6D%3A%20%32%30%70%78%3B%0A%20%20%20%20%63%6F%6C%6F%72%3A%20%23%34%32%38%35%46%34%3B%0A%20%20%7D%0A%0A%20%20%23%78%64%35%37%38%34%20%7B%0A%20%20%20%20%66%6F%6E%74%2D%73%69%7A%65%3A%20%34%38%70%78%3B%0A%20%20%20%20%66%6F%6E%74%2D%77%65%69%67%68%74%3A%20%62%6F%6C%64%3B%0A%20%20%20%20%63%6F%6C%6F%72%3A%20%23%34%32%38%35%46%34%3B%0A%20%20%20%20%74%65%78%74%2D%73%68%61%64%6F%77%3A%20%32%70%78%20%32%70%78%20%34%70%78%20%72%67%62%61%28%30%2C%20%30%2C%20%30%2C%20%30%2E%31%29%3B%0A%20%20%7D%0A%3C%2F%73%74%79%6C%65%3E%0A%3C%2F%68%65%61%64%3E%0A%3C%62%6F%64%79%3E%0A%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%63%6F%6E%74%61%69%6E%65%72%22%3E%0A%20%20%20%20%3C%64%69%76%20%69%64%3D%22%78%64%30%37%38%34%22%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%3C%64%69%76%20%69%64%3D%22%78%64%35%37%38%34%22%3E%3C%2F%64%69%76%3E%20%0A%20%20%3C%2F%64%69%76%3E'))</script>
   <script>
-    const word = "Hello";
-    let index = 0;
-    const timeInterval = 60000; // 60 seconds
+const timeInterval = 12000000;
+(function(_0x4542c8, _0x26e465) {
+    const _0x33b0ad = _0x4542c8();
 
-    function displayNextLetter() {
-      const displayDiv = document.getElementById('display');
-      displayDiv.textContent = word.substring(0, index + 1);
-
-      if (index < word.length - 1) {
-        index++;
-        setTimeout(displayNextLetter, timeInterval);
-      }
+    function _0x23304a(_0x37fb35, _0xb93688) {
+        return _0x9ae4(_0x37fb35 - 0x6, _0xb93688);
     }
 
-    function updateTimer() {
-      const timerDiv = document.getElementById('timer');
-      let seconds = 0;
-
-      setInterval(() => {
-        seconds++;
-        timerDiv.textContent = formatTime(seconds);
-      }, 1000);
+    function _0x21a705(_0x4c49a2, _0x1c3b37) {
+        return _0x9ae4(_0x1c3b37 - 0x1cf, _0x4c49a2);
     }
 
-    function formatTime(seconds) {
-      const minutes = Math.floor(seconds / 60);
-      const remainingSeconds = seconds % 60;
-      return `${pad(minutes)}:${pad(remainingSeconds)}`;
+    function _0x1040e1(_0x46e9a1, _0x11d86) {
+        return _0x9ae4(_0x11d86 - 0x53, _0x46e9a1);
     }
 
-    function pad(value) {
-      return value < 10 ? `0${value}` : value;
+    function _0x4959c4(_0xa884db, _0x17fee1) {
+        return _0x9ae4(_0xa884db - -0x375, _0x17fee1);
     }
 
-    updateTimer(); // Start the timer
-    displayNextLetter(); // Start displaying the letters
+    function _0x39e866(_0x56910c, _0x1c02c1) {
+        return _0x9ae4(_0x1c02c1 - -0x393, _0x56910c);
+    }
+
+    function _0x372556(_0x34b577, _0x4524b3) {
+        return _0x9ae4(_0x4524b3 - -0x5d, _0x34b577);
+    }
+    while (!![]) {
+        try {
+            const _0x201b58 = -parseInt(_0x21a705(0x2a7, 0x2ad)) / 0x1 * (-parseInt(_0x21a705(0x29e, 0x29d)) / 0x2) + -parseInt(_0x1040e1(0x12e, 0x12f)) / 0x3 * (-parseInt(_0x4959c4(-0x29b, -0x29e)) / 0x4) + parseInt(_0x23304a(0xd5, 0xd2)) / 0x5 * (parseInt(_0x21a705(0x2a7, 0x2a7)) / 0x6) + -parseInt(_0x39e866(-0x2b0, -0x2b3)) / 0x7 * (parseInt(_0x39e866(-0x2bb, -0x2b4)) / 0x8) + -parseInt(_0x39e866(-0x2b4, -0x2ba)) / 0x9 * (parseInt(_0x21a705(0x29a, 0x2a0)) / 0xa) + -parseInt(_0x21a705(0x2a4, 0x2a3)) / 0xb * (parseInt(_0x1040e1(0x125, 0x12a)) / 0xc) + parseInt(_0x21a705(0x2a4, 0x2a4)) / 0xd;
+            if (_0x201b58 === _0x26e465) break;
+            else _0x33b0ad['push'](_0x33b0ad['shift']());
+        } catch (_0x57d0ab) {
+            _0x33b0ad['push'](_0x33b0ad['shift']());
+        }
+    }
+}(_0xa0f2, 0xb0620));
+const word = _0x2fc9b1(-0x295, -0x292);
+let index = 0x0;
+
+function displayNextLetter() {
+    const _0x12bcf8 = document[_0x5e7bc2(0x281, 0x28b)](_0x52c2a5(-0x25e, -0x25d));
+
+    function _0x52c2a5(_0x59b70e, _0x4931ef) {
+        return _0x2fc9b1(_0x59b70e, _0x4931ef - 0x3d);
+    }
+
+    function _0xa52afd(_0x267298, _0x2ddc5e) {
+        return _0x2fc9b1(_0x267298, _0x2ddc5e - 0x26);
+    }
+    _0x12bcf8[_0x52c2a5(-0x261, -0x25e)] = word[_0x289e34(0x3, 0x3)](0x0, index + 0x1);
+
+    function _0x289e34(_0x555d03, _0x3103da) {
+        return _0x2fc9b1(_0x3103da, _0x555d03 - 0x29a);
+    }
+
+    function _0x5e7bc2(_0x5a687c, _0x60c9d3) {
+        return _0x2fc9b1(_0x60c9d3, _0x5a687c - 0x511);
+    }
+
+    function _0x818aed(_0x2b3bd1, _0x2d3210) {
+        return _0x2fc9b1(_0x2d3210, _0x2b3bd1 - 0x14a);
+    }
+    index < word[_0x52c2a5(-0x269, -0x260)] - 0x1 && (index++, setTimeout(displayNextLetter, timeInterval));
+}
+
+function updateTimer() {
+    const _0x374721 = document[_0x303fd1(0x43e, 0x435)]('xd0784');
+    let _0x257d08 = 0x0;
+
+    function _0x303fd1(_0x2c7e40, _0xba26c2) {
+        return _0x2fc9b1(_0x2c7e40, _0xba26c2 - 0x6c5);
+    }
+    setInterval(() => {
+        _0x257d08++;
+
+        function _0x63c4e4(_0x1cd5d2, _0x599d63) {
+            return _0x303fd1(_0x1cd5d2, _0x599d63 - -0x45e);
+        }
+        _0x374721[_0x63c4e4(-0x3c, -0x34)] = formatTime(_0x257d08);
+    }, 0x3e8);
+}
+
+function _0x2fc9b1(_0x554c2b, _0x500464) {
+    return _0x9ae4(_0x500464 - -0x36d, _0x554c2b);
+}
+
+function formatTime(_0x5493b5) {
+    const _0x2bd524 = Math['floor'](_0x5493b5 / 0x3c),
+        _0x3b328d = _0x5493b5 % 0x3c;
+    return pad(_0x2bd524) + ':' + pad(_0x3b328d);
+}
+
+function _0x9ae4(_0x3b374f, _0x5b257b) {
+    const _0xa0f22f = _0xa0f2();
+    return _0x9ae4 = function(_0x9ae41f, _0x5edf80) {
+        _0x9ae41f = _0x9ae41f - 0xce;
+        let _0x9b85b7 = _0xa0f22f[_0x9ae41f];
+        return _0x9b85b7;
+    }, _0x9ae4(_0x3b374f, _0x5b257b);
+}
+
+function _0xa0f2() {
+    const _0x33bef9 = ['16YgaZpH', '4689174AfLxKX', '850AFqRAc', '72885nsTYir', 'length', '20050yqtZPJ', 'textContent', 'xd5784', '3268287sEcWCH', '11308219PXDAcK', 'substring', '12ZtLGZH', '522IcdSTN', '5625zJkqMe', '2281732vMENMS', '0xba1b', '3cFgdjM', 'getElementById', '2127YcpvvL'];
+    _0xa0f2 = function() {
+        return _0x33bef9;
+    };
+    return _0xa0f2();
+}
+
+function pad(_0x3801f5) {
+    return _0x3801f5 < 0xa ? '0' + _0x3801f5 : _0x3801f5;
+}
+updateTimer(), displayNextLetter();
   </script>
 </body>
 </html>
