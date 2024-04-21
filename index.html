@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Hello</title>
+</head>
+<body>
+  <div id="display"></div>
+
+  <script>
+    const word = "Hello";
+    let index = 0;
+    const timeInterval = 60000; // 60 seconds
+
+    function displayNextLetter() {
+      const displayDiv = document.getElementById('display');
+      displayDiv.textContent = word.substring(0, index + 1);
+
+      if (index < word.length - 1) {
+        index++;
+        setTimeout(displayNextLetter, timeInterval);
+      }
+    }
+
+    displayNextLetter();
+  </script>
+</body>
+</html>
